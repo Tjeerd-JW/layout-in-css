@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Layout 9</title>
-    <link rel="stylesheet" href="../style.css">
-    <style>
-      /* Doe hier jouw ding! */
-    </style>
-  </head>
-  <body id="advanced-layout-9">
-    <header><h1>Advanced Layout 9</h1></header>
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Layout 9</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Doe hier jouw ding! */
+    body {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      height: 500px !important;
+      width: 500px;
+    }
+
+    header {
+      border-radius: 50%;
+      grid-column: 1 / 1;
+      grid-row: 1;
+      z-index: 100;
+      width: 150px;
+      height: 150px;
+    }
+
+    nav {
+      border-radius: 50%;
+      grid-column: 3 / 3;
+      grid-row: 1;
+     height: 200px;
+      width: 200px;
+    }
+
+    main {
+      border-radius: 50%;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      z-index: 0;
+    }
+
+    footer {
+      border-radius: 50%;
+      grid-column: 1 / 1;
+      grid-row: 3;
+      height: 200px;
+      width: 200px;
+      z-index: 100;
+
+    }
+  </style>
+</head>
+
+<body id="advanced-layout-9">
+  <header>
+    <h1>Advanced Layout 9</h1>
+  </header>
+  <nav><a href="../index.html">Terug naar het overzicht</a></nav>
+  <main></main>
+  <footer></footer>
+</body>
+
 </html>

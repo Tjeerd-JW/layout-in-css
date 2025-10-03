@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Layout 1</title>
-    <link rel="stylesheet" href="../style.css">
-    <style>
-      /* Doe hier jouw ding! */
-      body{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: .5rem;
-      }
-    </style>
-  </head>
-  <body id="advanced-layout-1">
 
-    <header><h1>Advanced Layout 1</h1></header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Layout 1</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* Doe hier jouw ding! */
+    body {
+      columns: 4 auto;
+      gap: .5rem;
+      height: 900px;
+    }
 
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
+    header {
+      column-span: all;
+      background: none !important;
+    }
 
-    <!-- Kopieer en mix zoveel als je nodig hebt -->
-    <section class="yellow"></section>
-    <section class="black"></section>
-    <section class="cyan"></section>
+    nav {
+      column-span: all;
+      background: none !important;
+    }
+
+    section {
+      margin: 5px 0 5px 0;
+      width: 250px;
+    }
+
+    .cyan {
+      height: 266px;
+    }
+
+    .magenta {
+      height: 204px;
+    }
+
+    .yellow {
+      height: 153px;
+    }
+
+    .black {
+      height: 263px;
+    }
+  </style>
+</head>
+
+<body id="advanced-layout-1">
+
+  <header>
+    <h1>Advanced Layout 1</h1>
+  </header>
+
+  <nav><a href="../index.html">Terug naar het overzicht</a></nav>
+
+  <!-- Kopieer en mix zoveel als je nodig hebt -->
+     <section class="cyan"></section>
+  <section class="cyan"></section>
+  <section class="cyan"></section>
     <section class="magenta"></section>
-    <section class="yellow"></section>
-    <section class="black"></section>
-    <section class="cyan"></section>
-    <section class="magenta"></section>
-    <section class="yellow"></section>
+  <section class="magenta"></section>
+  <section class="magenta"></section>
+  <section class="magenta"></section>
+  <section class="yellow"></section>
+  <section class="yellow"></section>
+  <section class="yellow"></section>
+  <section class="yellow"></section>
+  <section class="yellow"></section>
+  <section class="black"></section>
+  <section class="black"></section>
+  <section class="black"></section>
 
-    <footer></footer>
+</body>
 
-  </body>
 </html>
